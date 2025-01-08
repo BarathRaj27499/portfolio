@@ -1,0 +1,47 @@
+.app-container{
+    position: relative;
+}
+
+.menu-background{
+    height:100vh;
+    width: 100vw;
+    top: 0;
+    right:0;
+    position: fixed;
+    z-index: -1000;
+    background-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+    opacity: 0.95;
+    backdrop-filter: blur(5px);
+}
+
+.menu-container {
+    height: 100vh;
+    width: 98vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 18vh;
+    padding-bottom: 25vh;
+}
+
+.menu-container h1{
+    font-size: 3.75rem;
+    margin-top: 8vh;
+    color: #ffffff;
+    font-weight: 700;
+}
+.menu-container h3{
+    margin-top: 2vh;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: Jost, sans-serif !important;
+    padding: 3px;
+    border-radius: 18px;
+    font-weight: 700;
+}
+
+.scroll-y-hidden{
+    overflow-y: hidden;
+}

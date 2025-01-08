@@ -1,0 +1,61 @@
+/* ham menu */
+.ham-menu {
+  height: 50px;
+  width: 40px;
+  margin-left: auto;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+.ham-menu span {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s ease;
+}
+.ham-menu span:nth-child(1) {
+  top: 33.25%;
+}
+.ham-menu span:nth-child(3) {
+  top: 66.5%;
+}
+.ham-menu.active span {
+  background-color: white;
+}
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.navbar-brand{
+  color: white;
+  z-index: 1000;
+}
+
+.navbar{
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+.bg-dark{
+  background-color: #333 !important;
+}
+
+
+.menu-bacground{
+  height: 90vh;
+  opacity: 0.5;
+  z-index: 1;
+}
+

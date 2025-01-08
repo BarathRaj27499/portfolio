@@ -1,0 +1,39 @@
+.about-me-img{
+    width: 15vw;
+}
+
+.about-me-div{
+    position: relative;
+    z-index: -1001;
+    margin-bottom: 8vh;
+    padding-top: 12vh;
+}
+
+.margin-top-10{
+    margin-top: 10%;
+}
+
+.margin-top-5{
+    margin-top: 5%;
+}
+
+.skill-icon{
+    width: 7vw;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.category-heading{
+    border-top: 1px solid grey;
+    padding-top: 3%;
+}
+
+.project-tools-icon{
+ width: 5vw;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}

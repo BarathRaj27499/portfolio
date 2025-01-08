@@ -1,0 +1,18 @@
+<div #homeComponentDiv class="container overflow-hidden home-div">
+    <div class="row justify-content-around align-items-center home-container">
+        <div class="col-md-6 col-sm-12" [ngClass]="isSideNavOpen ? '' : 'z-index-neg-1001'"> 
+            <h3 [@fadeInFromLeft]>{{name}}</h3>
+            <h1 [@fadeInFromLeft] class="mt-4">{{role}}</h1>
+            <p [@fadeInFromLeft] class="mt-4">{{profileSummary}}</p>
+            <div class="mt-4">
+                <a href="/Resume.pdf" download="Barath_Raj_T.pdf">
+                    <button [@fadeInFromRight] class="btn btn-primary">Download CV</button>
+                  </a>
+                <button [@fadeInFromRight] routerLink="/contact-me" class="btn btn-primary ms-4">Contact Me</button>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 z-index-neg-1001"> 
+            <img [@fadeInFromRight] class="developer-image" src="images/developer-image.jpg" alt="">
+        </div>
+   </div>
+</div>

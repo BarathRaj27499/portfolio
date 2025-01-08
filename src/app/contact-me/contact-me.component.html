@@ -1,0 +1,21 @@
+<div #contactMeComponentDiv class="container overflow-hidden contact-me-div">
+    <div class="row justify-content-around align-items-center contact-me-container">
+        <div class="col-md-6 col-sm-12" [ngClass]="isSideNavOpen ? '' : 'z-index-neg-1001'"> 
+            <h1 class="mb-4" [@fadeInFromLeft]>Get in touch</h1>
+            <div [@fadeInFromRight]>
+                <a href="mailto:barathraj27499@gmail.com" class="mt-4">barathraj27499&#64;gmail.com</a>
+            </div>
+            <div class="contact-me-icons mt-4">
+                <div [@fadeInFromRight] class="contact-icon text-center">
+                    <a href="mailto:barathraj27499@gmail.com"><img src="images/mail-icon.png"></a>
+                </div>
+                <div [@fadeInGrow] class="contact-icon margin-left-5 text-center">
+                    <a href="https://www.linkedin.com/in/barath-raj-23142a235" target="_blank"><img src="images/linkedIn-icon.png"></a>
+               </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 z-index-neg-1001"> 
+            <img [@fadeInFromRight] class="developer-image" src="images/contact-me-image.png" alt="">
+        </div>
+   </div>
+</div>

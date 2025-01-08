@@ -1,0 +1,14 @@
+<div class="app-container">
+    <div *ngIf="!isSideNavOpen" [@openMenuBgFromHamburgerBtn] class="menu-background">
+    </div>
+    <div *ngIf="!isSideNavOpen" class="menu-container">
+        <h1 *ngIf="isMenuOpen" [@fadeIn]>Menu</h1>
+        <h3 *ngIf="isMenuOpen" (click)="navigateTo('/')" [@fadeIn]>Home</h3>
+        <h3 *ngIf="isMenuOpen" (click)="navigateTo('/about-me')" [@fadeIn]>About</h3>
+        <h3 *ngIf="isMenuOpen" (click)="navigateTo('/projects')" [@fadeIn]>Projects</h3>
+        <h3 *ngIf="isMenuOpen" (click)="navigateTo('/contact-me')" [@fadeIn]>Contact</h3>
+      </div>
+    <app-header></app-header>
+    <app-side-nav *ngIf="isDesktop" [@sidenavFadeIn]="isSideNavOpen ? 'open' : 'closed'"></app-side-nav>
+    <router-outlet></router-outlet>
+</div>
