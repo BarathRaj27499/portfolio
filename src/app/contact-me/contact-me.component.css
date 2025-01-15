@@ -32,13 +32,26 @@
     text-align: center;
 }
 
-.contact-icon img{
+
+.contact-icon img {
     width: 3vw;
 }
 
-.contact-icon{
+.contact-icon {
     width: 1vw;
 }
+
+
+@media (max-width: 768px) {
+    .contact-icon img {
+        width: 25%;
+    }
+
+    .contact-icon {
+        width: auto; 
+    }
+}
+
 
 .contact-me-icons{
     display: flex;
