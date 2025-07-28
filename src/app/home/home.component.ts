@@ -42,7 +42,10 @@ export class HomeComponent implements AfterViewInit {
   @ViewChild('homeComponentDiv') homeComponentDiv!:ElementRef;
   name: string = "Barath Raj Thangaraju";
   role: string = "Front End Developer"
-  profileSummary: string = "Angular Front-End Developer with 3+ years of experience crafting exceptional, responsive web applications. Also proficient in HTML, CSS, JavaScript, TypeScript, Bootstrap, and RxJS. I excel at building engaging and performant user interfaces.";
+  profileSummary: string = `Angular Front-End Developer with 4 years of experience crafting
+ exceptional, responsive web applications. Also proficient in HTML, CSS,
+ JavaScript, TypeScript, Bootstrap, NgRx, RxJS and unit testing. I excel at
+ building engaging and performant user interfaces.`;
   isSideNavOpen: boolean = true;
 
   constructor(private dataSharedService:DataSharedService){
