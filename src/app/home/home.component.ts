@@ -44,7 +44,7 @@ export class HomeComponent implements AfterViewInit {
   role: string = "Front End Developer"
   profileSummary: string = `Angular Front-End Developer with 4 years of experience crafting
  exceptional, responsive web applications. Also proficient in HTML, CSS,
- JavaScript, TypeScript, Bootstrap, NgRx, RxJS and unit testing. I excel at
+ JavaScript, TypeScript, Bootstrap, NgRx and RxJS. I excel at
  building engaging and performant user interfaces.`;
   isSideNavOpen: boolean = true;
 
